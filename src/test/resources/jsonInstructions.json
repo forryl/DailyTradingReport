@@ -1,7 +1,7 @@
 [
 	{  
 		"entityName" : "foo",  
-		"buySell" : "b",  
+		"buySell" : "B",  
 		"agreedFx" : 0.05,  
 		"currency" : "GBP",  
 		"instructionDate" : "3 Jan 2018",  
@@ -11,7 +11,7 @@
 	},
 	{  
 		"entityName" : "bar",  
-		"buySell" : "s",  
+		"buySell" : "S",  
 		"agreedFx" : 0.05,  
 		"currency" : "SAR",  
 		"instructionDate" : "4 Jan 2018",  

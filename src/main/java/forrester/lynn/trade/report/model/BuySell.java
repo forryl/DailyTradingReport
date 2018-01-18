@@ -6,8 +6,8 @@ package forrester.lynn.trade.report.model;
  */
 public enum BuySell {
 
-  BUY("b"),
-  SELL("s");
+  BUY("B"),
+  SELL("S");
   
   private String value;
   
