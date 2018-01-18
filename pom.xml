@@ -60,7 +60,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>forrester.lynn.daily.report.App</mainClass>
+					<mainClass>forrester.lynn.trade.report.App</mainClass>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -76,7 +76,7 @@
                 <archive>
                 <manifest>
                     <mainClass>
-                        forrester.lynn.daily.report.App
+                        forrester.lynn.trade.report.App
                     </mainClass>
                 </manifest>
                 </archive>
