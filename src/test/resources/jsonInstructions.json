@@ -1,0 +1,22 @@
+[
+	{  
+		"entityName" : "foo",  
+		"buySell" : "b",  
+		"agreedFx" : 0.05,  
+		"currency" : "GBP",  
+		"instructionDate" : "3 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 200,  
+		"pricePerUnit": 1.44 
+	},
+	{  
+		"entityName" : "bar",  
+		"buySell" : "s",  
+		"agreedFx" : 0.05,  
+		"currency" : "SAR",  
+		"instructionDate" : "4 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 400,  
+		"pricePerUnit": 1.44 
+	}
+]

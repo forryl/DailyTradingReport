@@ -1,0 +1,72 @@
+[
+	{  
+		"entityName" : "foo",  
+		"buySell" : "b",  
+		"agreedFx" : 0.05,  
+		"currency" : "GBP",  
+		"instructionDate" : "3 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 200,  
+		"pricePerUnit": 1.44 
+	},
+	{  
+		"entityName" : "bar",  
+		"buySell" : "s",  
+		"agreedFx" : 0.05,  
+		"currency" : "SAR",  
+		"instructionDate" : "4 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 400,  
+		"pricePerUnit": 1.44 
+	},
+	{  
+		"entityName" : "kee",  
+		"buySell" : "b",  
+		"agreedFx" : 0.6,  
+		"currency" : "EUR",  
+		"instructionDate" : "3 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 200,  
+		"pricePerUnit": 3.34 
+	},
+	{  
+		"entityName" : "fin",  
+		"buySell" : "b",  
+		"agreedFx" : 1.1,  
+		"currency" : "AUS",  
+		"instructionDate" : "5 Jan 2018",  
+		"settlementDate" : "6 Jan 2018",  
+		"units": 250,  
+		"pricePerUnit": 1 
+	},
+	{  
+		"entityName" : "buzz",  
+		"buySell" : "s",  
+		"agreedFx" : 3.4,  
+		"currency" : "SAR",  
+		"instructionDate" : "4 Jan 2018",  
+		"settlementDate" : "7 Jan 2018",  
+		"units": 250,  
+		"pricePerUnit": 1 
+	},
+	{  
+		"entityName" : "gee",  
+		"buySell" : "b",  
+		"agreedFx" : 1.1,  
+		"currency" : "AUS",  
+		"instructionDate" : "8 Jan 2018",  
+		"settlementDate" : "10 Jan 2018",  
+		"units": 250,  
+		"pricePerUnit": 1 
+	},
+	{  
+		"entityName" : "rib",  
+		"buySell" : "s",  
+		"agreedFx" : 0.05,  
+		"currency" : "GBP",  
+		"instructionDate" : "1 Jan 2018",  
+		"settlementDate" : "10 Jan 2018",  
+		"units": 100,  
+		"pricePerUnit": 3.00 
+	}
+]
