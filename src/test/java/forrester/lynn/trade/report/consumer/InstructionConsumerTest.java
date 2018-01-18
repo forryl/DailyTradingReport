@@ -14,8 +14,9 @@ import forrester.lynn.trade.report.model.Currency;
 import forrester.lynn.trade.report.model.Instruction;
 
 /**
- * 
  * Tests the InstructionConsumer class.
+ * 
+ * @author Lynn Forrester
  */
 public class InstructionConsumerTest {
 
@@ -123,12 +124,8 @@ public class InstructionConsumerTest {
 
     assertNull(instruction.getTradeAmount());
 
-    System.out.println(instruction);
-    
     consumer.accept(instruction);
 
-    System.out.println(instruction);
-    
     assertNotNull(instruction.getTradeAmount());
 
     // 1 * 1 * 1
@@ -163,13 +160,9 @@ public class InstructionConsumerTest {
     instruction.setUnits(1);
 
     assertNull(instruction.getTradeAmount());
-
-    System.out.println(instruction);
     
     consumer.accept(instruction);
 
-    System.out.println(instruction);
-    
     assertNotNull(instruction.getTradeAmount());
 
     // 1 * 1 * 1

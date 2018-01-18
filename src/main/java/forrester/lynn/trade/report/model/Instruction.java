@@ -2,6 +2,7 @@ package forrester.lynn.trade.report.model;
 
 import java.util.Date;
 
+import forrester.lynn.trade.report.util.ReportGeneratorUtils;
 import lombok.Data;
 
 /**
@@ -49,5 +50,16 @@ public class Instruction {
     return entityName.hashCode() + buySell.hashCode() + currency.hashCode()
         + instructionDate.hashCode() + settlementDate.hashCode() + units.hashCode()
         + pricePerUnit.hashCode();
+  }
+  
+  public String toString() {
+	  return entityName 
+			  + " - " + buySell.toString() 
+			  + " - " + currency.toString() 
+			  + " - " + ReportGeneratorUtils.DATE_FORMAT.format(instructionDate) 
+			  + " - " + ReportGeneratorUtils.DATE_FORMAT.format(settlementDate)
+			  + " - " + units
+			  + " - " + ReportGeneratorUtils.DECIMAL_FORMAT.format(pricePerUnit)
+			  + " - " + ReportGeneratorUtils.DECIMAL_FORMAT.format(tradeAmount);
   }
 }

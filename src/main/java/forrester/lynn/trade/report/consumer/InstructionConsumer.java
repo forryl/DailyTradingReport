@@ -9,6 +9,10 @@ import forrester.lynn.trade.report.model.Instruction;
 
 /**
  * This class represents the Instruction Consumer.
+ * The consumer performs a few adjustments on the Instruction.
+ * 
+ * The trade amount is calculate and the settlement date is calculated 
+ * based on the day of the week and the currency.
  * 
  * @author Lynn Forrester
  */

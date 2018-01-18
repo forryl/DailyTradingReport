@@ -1,8 +1,9 @@
 package forrester.lynn.trade.report.model;
 
 /**
+ * Represents if the Instruction is Buy or Sell
  * 
- * 
+ * @author Lynn Forrester
  */
 public enum BuySell {
 

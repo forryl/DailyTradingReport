@@ -1,7 +1,5 @@
 package forrester.lynn.trade.report;
 
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
@@ -14,6 +12,7 @@ import forrester.lynn.trade.report.consumer.InstructionConsumer;
 import forrester.lynn.trade.report.input.JsonLoader;
 import forrester.lynn.trade.report.model.BuySell;
 import forrester.lynn.trade.report.model.Instruction;
+import forrester.lynn.trade.report.util.ReportGeneratorUtils;
 
 /**
  * The report generator class.
@@ -26,9 +25,6 @@ import forrester.lynn.trade.report.model.Instruction;
  * @author Lynn Forrester
  */
 public class ReportGenerator {
-
-  private SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy");
-  private DecimalFormat decimalFormat = new DecimalFormat("#.00");
 
   private InstructionConsumer instructionConsumer = new InstructionConsumer();
   
@@ -82,9 +78,10 @@ public class ReportGenerator {
             .mapToDouble(Instruction::getTradeAmount)
             .sum();
   
-        String prettyPrintDate = dateFormat.format(entry.getKey());
+        String prettyPrintDate = ReportGeneratorUtils.DATE_FORMAT.format(entry.getKey());
   
-        System.out.println(prettyPrintDate + " Total: " + decimalFormat.format(totalValue));
+        System.out.println(prettyPrintDate + " Total: " 
+        		+ ReportGeneratorUtils.DECIMAL_FORMAT.format(totalValue));
       }
       System.out.println();
     }
