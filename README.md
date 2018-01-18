@@ -1,4 +1,4 @@
-# Trade Report 
+﻿# Trade Report 
 
 
 This repository contains a program that generates a report based on the trading instructions that are contained within the file.
@@ -37,7 +37,7 @@ Create a report that shows:
  [
 	{  
 		"entityName" : "foo",  
-		"buySell" : "b",  
+		"buySell" : "B",  
 		"agreedFx" : 0.05,  
 		"currency" : "GBP",  
 		"instructionDate" : "3 Jan 2018",  
