@@ -45,7 +45,7 @@ This was performed using a Consumer function over the Collection of Instructions
 The code base requires to dependencies:
 - Java 1.8
 - [Project Lombok](https://projectlombok.org/)
-- [Jackson Databind] (https://github.com/FasterXML/jackson-databind)
+- [Jackson Databind](https://github.com/FasterXML/jackson-databind)
 
 Both are marked as dependencies with Maven and when building, the should be downloaded from the repository.
 
