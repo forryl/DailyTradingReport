@@ -1,7 +1,7 @@
 # Trade Report 
 
 
-This repository contains a program that generates a report based on the data contained within the file.
+This repository contains a program that generates a report based on the trading instructions that are contained within the file.
 
 ## Details 
 
@@ -31,6 +31,22 @@ Create a report that shows:
 ## Assumptions 
  - Data incoming is in JSON format
  - The JSON is supplied in file format.
+ - The Json Format is as follows:
+ 
+ ```json
+ [
+	{  
+		"entityName" : "foo",  
+		"buySell" : "b",  
+		"agreedFx" : 0.05,  
+		"currency" : "GBP",  
+		"instructionDate" : "3 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 200,  
+		"pricePerUnit": 1.44 
+	}
+ ]
+ ```
  
 ## Design
  - It was decided that the Instructions would be supplied in a JSON format file.  This file temporarily sits on the classpath for the moment.
@@ -43,9 +59,10 @@ This was performed using a Consumer function over the Collection of Instructions
   
 ## Dependencies
 The code base requires to dependencies:
+- Maven
 - Java 1.8
 - [Project Lombok](https://projectlombok.org/)
-- [Jackson Databind] (https://github.com/FasterXML/jackson-databind)
+- [Jackson Databind](https://github.com/FasterXML/jackson-databind)
 
 Both are marked as dependencies with Maven and when building, the should be downloaded from the repository.
 
@@ -57,7 +74,8 @@ To edit the code in an IDE Project Lombok is required.  For more details on Proj
 3. From the command line run : ```mvn clean install```
 
 ## Running
-To run the code to see the results, execure ```mvn exex:java``` on the command line.  The report will be shown on the screen.
+To run the code to see the results, execure ```mvn exec:java``` on the command line.  The report will be shown on the screen.
+
 Alternativley, the jar file created during the build process can be executed by running:
 ```java -jar TradeReport-0.1-SNAPSHOT-jar-with-dependencies.jar``` 
 from the command line.  The jar can be found the  `target` directory.
