@@ -1,7 +1,7 @@
 # Trade Report 
 
 
-This repository contains a program that generates a report based on the data contained within the file.
+This repository contains a program that generates a report based on the trading instructions that are contained within the file.
 
 ## Details 
 
@@ -31,6 +31,22 @@ Create a report that shows:
 ## Assumptions 
  - Data incoming is in JSON format
  - The JSON is supplied in file format.
+ - The Json Format is as follows:
+ 
+ ```json
+ [
+	{  
+		"entityName" : "foo",  
+		"buySell" : "b",  
+		"agreedFx" : 0.05,  
+		"currency" : "GBP",  
+		"instructionDate" : "3 Jan 2018",  
+		"settlementDate" : "5 Jan 2018",  
+		"units": 200,  
+		"pricePerUnit": 1.44 
+	}
+ ]
+ ```
  
 ## Design
  - It was decided that the Instructions would be supplied in a JSON format file.  This file temporarily sits on the classpath for the moment.
